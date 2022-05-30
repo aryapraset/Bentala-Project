@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BentalaProject</string>
+    <string name="bentala_heading">Bentala</string>
+    <string name="bentala_subs">Soil Detector App</string>
+    <string name="bentala_version">version 1.0</string>
+</resources>

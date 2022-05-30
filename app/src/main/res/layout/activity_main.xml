@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_primary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bentala_heading"
+        style="@style/BentalaHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/bentala_heading"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/bentala_subs"
+        style="@style/BentalaSubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/bentala_subs"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/bentala_heading"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/bentala_heading"
+        app:layout_constraintTop_toBottomOf="@+id/bentala_heading" />
+
+    <ImageView
+        android:id="@+id/bentala_logo"
+        android:layout_width="210dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/bentala_icon"
+        android:contentDescription=""
+        app:layout_constraintEnd_toEndOf="@+id/bentala_subs"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/bentala_subs"
+        app:layout_constraintTop_toBottomOf="@+id/bentala_subs"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/bentala_ver"
+        style="@style/BentalaVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/bentala_version"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/bentala_logo"
+        app:layout_constraintStart_toStartOf="@+id/bentala_logo"
+        app:layout_constraintTop_toBottomOf="@+id/bentala_logo" />
+
+    <ImageButton
+        android:id="@+id/title_button"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="52dp"
+        android:background="@color/green_primary"
+        android:contentDescription="Button Next"
+        android:src="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
